@@ -36,7 +36,7 @@ const current_count = document.querySelector(
 ) as HTMLSpanElement;
 
 function update_count() {
-  current_count.innerHTML = count();
+  current_count.innerHTML = count()?.toString() ?? "0";
 }
 
 count_button.addEventListener("click", update_count);

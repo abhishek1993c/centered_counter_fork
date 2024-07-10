@@ -10,6 +10,6 @@ export const factory = (start?: number, step?: number) => {
 
   return () => {
     newNumber += !Number.isNaN(Number(step ?? 1)) ? Number(step ?? 1) : 1;
-    return newNumber.toString();
+    return newNumber;
   };
 };
